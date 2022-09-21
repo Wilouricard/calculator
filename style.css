@@ -1,0 +1,87 @@
+h1,
+p {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "sept huit neuf moins"
+    "quatre cinq six plus"
+    "un deux trois egal"
+    "zero zero virgule egal";
+}
+
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #655f25;
+  color: white;
+  border: 1px solid #23231a;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.padButton:hover {
+  border: 1px solid white;
+  color: #ccc;
+}
+
+.dis {
+  grid-area: dis;
+  background-color: #23231a;
+  text-align: right;
+  font-size: 20px;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.egal {
+  grid-area: egal;
+}
+
+.dark-gray {
+  background-color: #322f20;
+}
+
+.rouge {
+  background-color: #cb7715;
+}
+
+.blue {
+  background-color: #fe5f00;
+}
+
+.total {
+  padding: 5px 20px;
+  color: white;
+}
+
+.dis input {
+  border-image-width: 90%;
+  color: white;
+  padding: 5px 20px;
+  text-align: right;
+  background-color: #23231a;
+}
+
+input::placeholder {
+  color: white;
+}
